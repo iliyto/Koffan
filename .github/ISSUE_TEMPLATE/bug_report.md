@@ -18,5 +18,7 @@ assignees: PanSalut
 3.
 
 ### Environment
+- Version:
+- Environment: localhost / production
 - Browser:
 - Device: mobile / desktop
