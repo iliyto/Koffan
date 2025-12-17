@@ -3,7 +3,7 @@ name: Feature request
 about: Suggest an idea for Koffan
 title: ''
 labels: enhancement
-assignees: ''
+assignees: PanSalut
 ---
 
 ### What would you like?
