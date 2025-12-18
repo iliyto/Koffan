@@ -47,6 +47,24 @@
             </svg>
         </button>
 
+        <!-- Edit -->
+        <button
+            data-item-id="{{.Item.ID}}"
+            data-item-name="{{.Item.Name}}"
+            data-item-description="{{.Item.Description}}"
+            @click="$data.editItem({
+                id: parseInt($el.dataset.itemId),
+                name: $el.dataset.itemName,
+                description: $el.dataset.itemDescription || ''
+            })"
+            class="p-1.5 rounded-md hover:bg-stone-100 text-stone-400 transition-colors"
+            :title="t('common.edit')"
+        >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+            </svg>
+        </button>
+
         <!-- Move up -->
         <button
             @click="$dispatch('move-item', {id: {{.Item.ID}}, direction: 'up'})"
