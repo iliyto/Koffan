@@ -208,6 +208,10 @@ function shoppingList() {
 
             // Online/offline event listeners
             window.addEventListener('online', async () => {
+                // Prevent double execution
+                if (this._onlineHandled) return;
+                this._onlineHandled = true;
+
                 console.log('[App] Back online');
                 this.isOnline = true;
 
