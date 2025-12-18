@@ -265,7 +265,7 @@ function shoppingList() {
                 for (const action of actions) {
                     try {
                         // For modifying actions - check server version first (Last Write Wins)
-                        if (action.type === 'toggle_item' || action.type === 'update_item') {
+                        if (action.type === 'toggle_item' || action.type === 'update_item' || action.type === 'edit_item') {
                             const itemId = this.extractItemId(action.url);
                             if (itemId) {
                                 const serverVersion = await this.getItemVersion(itemId);
