@@ -100,6 +100,16 @@ APP_PASSWORD=yourpassword go run main.go
 
 ## Docker
 
+### Quick Start (recommended)
+
+```bash
+docker run -d -p 3000:80 -e APP_PASSWORD=yourpassword -v koffan-data:/data ghcr.io/pansalut/koffan:latest
+```
+
+App available at http://localhost:3000
+
+### Build from source
+
 ```bash
 docker-compose up -d
 # App available at http://localhost:80
