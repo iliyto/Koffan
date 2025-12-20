@@ -166,4 +166,6 @@ If you find this project useful, consider supporting its development:
 
 ## License
 
-MIT
+MIT License with [Commons Clause](https://commonsclause.com/).
+
+You are free to use, modify, and share this software for any purpose, including commercial use within your organization. However, you may not sell the software or offer it as a paid service.
