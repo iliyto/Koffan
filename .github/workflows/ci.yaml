@@ -3,7 +3,7 @@ name: Docker Hub + Github Packages
 on:
   workflow_dispatch:
   push:
-    branches: ["master"]
+    branches: ["main"]
     # Publish semver tags as releases.
     tags: ["*.*.*"]
 
